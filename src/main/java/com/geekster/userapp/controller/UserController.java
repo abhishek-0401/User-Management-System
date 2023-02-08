@@ -39,7 +39,7 @@ public class UserController {
 //    }
 
 
-//    http://localhost:8080/api/v1/user-app/deleteUser/id/2
+//    http://localhost:8080/api/v1/user-app/deleteUser/id/3
     @DeleteMapping("deleteUser/id/{id}")
     public void deleteTodo(@PathVariable int id) {
         userService.deleteUser(id);
@@ -49,4 +49,11 @@ public class UserController {
     public void updateTodo(@PathVariable int id,@RequestBody User user) {
         userService.updateUserInfo(id,user);
     }
+//    {
+//        "id": 4,
+//            "name": "Arti",
+//            "username": "devi_arti",
+//            "address": "Chandigarh",
+//            "phoneNumber": 9784514784
+//    }
 }
