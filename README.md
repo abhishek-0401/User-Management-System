@@ -9,6 +9,14 @@
 - UserName
 - Address
 - Phone Number
+
+#### End Points used:
+> - /getaAllUser
+> - /getUser/userid/{userid}
+> - /updateUserInfo/id/{id}
+> - /addUser
+> - /deleteUser/id/{id}
+
 - ## Get all Users list
 
 ```rs
