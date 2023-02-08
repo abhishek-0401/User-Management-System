@@ -53,15 +53,17 @@ GET http://localhost:8080/api/v1/user-app/getAllUser
   }
 ]
 ```
+![](/screenshots/SnapShot1_GetAllUsers.jpg)
 - ## Get a user by it's userId
 
 ```rs
-POST http://localhost:8080/api/v1/user-app/getUser/userid/{userid}
+GET http://localhost:8080/api/v1/user-app/getUser/userid/{userid}
 ```
 #### 🎯 Examples
 ```
 http://localhost:8080/api/v1/user-app/getUser/userid/1
 ```
+![](/screenshots/SnapShot2_GetUserById.jpg)
 ```json
 {
   "id": 1,
@@ -93,16 +95,7 @@ Each endpoint can be supplemented by a path containing userId whose info we want
 ```
 http://localhost:8080/api/v1/user-app/updateUserInfo/id/4
 ```
-```rs
-BODY
-{
-  "id": 4,
-  "name": "Arti",
-  "username": "devi_arti",
-  "address": "Chandigarh",
-  "phoneNumber": 9784514784
-}
-```
+![](/screenshots/SnapShot4_updateUserInfo.jpg)
 > Status 200 OK
 ```rs
 GET http://localhost:8080/api/v1/user-app/getUser/userid/4
@@ -122,16 +115,7 @@ We can observe that the information of user with userId=4 has been updated as it
 ```rs
 POST http://localhost:8080/api/v1/user-app/addUser
 ```
-```rs
-BODY
-{
-  "id": 6,
-  "name": "Keshav",
-  "username": "keshu_veer",
-  "address": "Jamshedpur",
-  "phoneNumber": 9458765518
-}
-```
+![](/screenshots/SnapShot3_addUser.jpg)
 > Status 200 OK
 ```
 http://localhost:8080/api/v1/user-app/getAllUser
@@ -190,6 +174,7 @@ DELETE http://localhost:8080/api/v1/user-app/deleteUser/id/{id}
 ```
 http://localhost:8080/api/v1/user-app/deleteUser/id/3
 ```
+![](/screenshots/SnapShot5_deleteUser.jpg)
 > Status 200 OK
 ```
 http://localhost:8080/api/v1/user-app/getAllUser
@@ -233,3 +218,5 @@ http://localhost:8080/api/v1/user-app/getAllUser
   }
 ]
 ```
+## Final Updated List
+![](/screenshots/SnapShot6_FinalUpdatedList.jpg)
