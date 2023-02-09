@@ -1,6 +1,13 @@
 # User Management System
 #### User Management System provides us an opportunity to GET the list of all the users stored in an ArrayList. We can also add a new user, update the information of an already existing user and deleting any user by it's userId as per our requirement.
 
+#### Tools used:
+-  JDK 17
+-  Intelij IDEA
+#### Dependencies used:
+-  Spring Web
+-  Spring Boot Dev Tools
+
 ## 📄 API Documentation
 > http://localhost:8080/api/v1/user-app
 #### Each user will have the following attributes:
